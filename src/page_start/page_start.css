@@ -1,0 +1,73 @@
+.StartP{
+    
+    display: grid;
+    grid-template-areas: 
+    "Header Header Header Header" 
+    "Nav Cont1 Cont2 Myarticle";
+
+     grid-auto-rows:90px 1fr ; 
+    grid-template-columns: 2fr 4fr 4fr 2fr;
+}
+.MYheader{
+    grid-area: Header;
+    background-color: aqua;
+    display: grid;
+    grid-auto-rows:auto; 
+    grid-template-columns: 1fr 5fr 5fr 1fr;
+    grid-template-areas: 
+    "Header_vn1 Header_vn2 Header_vn3 Header_vn4" ;
+
+}
+.MYheader_vn1{
+    grid-area: Header_vn1;
+    background-color: rgb(135, 222, 203);
+
+}
+.MYheader_vn2{
+    grid-area: Header_vn2;
+    background-color:darksalmon;
+    width: 100%; /* Ширина изображений */
+  height: 100%; /* Высота изображении */
+  object-fit: cover; /* Вписываем фотографию в область */
+
+}
+.MYheader_vn3{
+    grid-area: Header_vn3;
+    background-color:darksalmon;
+    width: 100%; /* Ширина изображений */
+  height: 100%; /* Высота изображении */
+  object-fit: cover; /* Вписываем фотографию в область */
+
+}
+
+.MYheader_vn4{
+    grid-area: Header_vn4;
+    background-color:darkkhaki;
+
+}
+.MYnav{
+    grid-area: Nav;
+background-color: brown;
+}
+.Myarticle{
+    grid-area:Myarticle ;
+    background-color: #000;    
+    margin: 0;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+.Content_1{
+    grid-area: Cont1;
+    background-color: darkolivegreen;
+}
+.Content_2{
+    grid-area: Cont2;
+    background-color: darkolivegreen;
+}
+li {
+    list-style-type: none;
+}
+.Content_napol{
+    margin: 5% 2% 5% 14%;
+    border-radius: 50px;
+}
